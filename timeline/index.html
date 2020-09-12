@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+  <!-- scrolling animations -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    $(function () {
+      $(document).scroll(function () {
+        let $nav = $(".nav");
+        let listElements = $(".dd h3");
+        let listLinks = $(".nav-list li a");
+        let brand = $(".brand-nav h3 a");
+        let ddElements = $(".dd-menu ul li a");
+        let image = $(".brand-nav img");
+        let image2 = document.querySelector(".brand-nav img")
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        listElements.toggleClass('scrolledList', $(this).scrollTop() > $nav.height());
+        listLinks.toggleClass('scrolledList', $(this).scrollTop() > $nav.height());
+        brand.toggleClass('scrolledList', $(this).scrollTop() > $nav.height());
+        image.toggleClass('scrolledImg', $(this).scrollTop() > $nav.height());
+        ddElements.toggleClass('scrolledNav', $(this).scrollTop() > $nav.height());
+        if ($(this).scrollTop() > $nav.height()) {
+          image2.setAttribute("src", "picture1-1-354x178.png");
+        } else {
+          image2.setAttribute("src", "Logo.png");
+        }
+      });
+    });
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section class="navbar">
+    <div class="nav">
+      <div class="brand-nav">
+        <img src="Logo.png" alt="brand-img" />
+        <h3><a href="#">AXLR8R FORMULA RACING</a></h3>
+        <div class="ham">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
+      </div>
+      <div class="nav-menu">
+        <ul class="nav-list">
+          <li class="simple-link">
+            <a href="#">HOME</a>
+          </li>
+          <li class="dd">
+            <h3 class="about">ABOUT US<i class="fas fa-angle-down icon"></i></h3>
+            <div class="about-dd dd-menu">
+              <ul>
+                <li>
+                  <a href="https://www.w3schools.com/css/css_combinators.asp">OUR CREW</a>
+                </li>
+                <li>
+                  <a href="#">DEPARTMENTAL BREAKDOWN</a>
+                </li>
+                <li>
+                  <a href="#">TESTIMONIALS</a>
+                </li>
+                <li>
+                  <a href="#">OUR ACHIEVEMENTS</a>
+                </li>
+                <li>
+                  <a href="#">TIMELINE</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="dd">
+            <h3 class="cars">CARS<i class="fas fa-angle-down icon"></i></h3>
+            <div class="cars-dd dd-menu">
+              <ul>
+                <li>
+                  <a href="#">ELECTRIC CARS</a>
+                </li>
+                <li>
+                  <a href="#">COMBUSTION CARS</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="simple-link">
+            <a href="#">ALBUMS</a>
+          </li>
+          <li class="simple-link">
+            <a href="#">FORMULA STUDENT</a>
+          </li>
+          <li class="simple-link">
+            <a href="#">SPONSORS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div class="timeline">
+
+
+    <ul class="tl">
+
+      <li class="tl-item">
+
+        <div class="tl-bg" style="background-image: url(https://placeimg.com/801/801/nature)"></div>
+
+        <div class="tl-year">
+          <p class="f2 heading--sanSerif">SEPTEMBER 2019</p>
+        </div>
+
+        <div class="tl-content">
+          <h1>INDUSTRY DAY</h1>
+          <p>Industry Day aims to harness and promote the power of Industry-Academia collaboration, kindle ideas for
+            cogent partnerships and showcase cutting edge technology research conducted by the IIT Delhi research
+            community with an objective to demonstrate technical research capabilities, forge new collaborative
+            relationships and further strengthen our existing partnerships.</p>
+        </div>
+        <button class="btn-album">
+          <p class="know-more">Know More</p>
+        </button>
+      </li>
+
+      <li class="tl-item">
+
+        <div class="tl-bg" style="background-image: url(https://placeimg.com/802/802/nature)"></div>
+
+        <div class="tl-year">
+          <p class="f2 heading--sanSerif">OCTOBER 2019</p>
+        </div>
+
+        <div class="tl-content">
+          <h1 class="f3 text--accent ttu">DL 1-2-3-4 PROJECT EVALUATION</h1>
+          <p>With the onset of a new season, it is the time for all project evaluation. On this day, all technical and
+            other projects going on in IIT are reviewed. The projects showcase the advancement in technology with
+            innovation students and research communities bring into. With presentations and discussions, this day is
+            very important for all the students and faculty members. </p>
+        </div>
+        <button class="btn-album">
+          <p class="know-more">Know More</p>
+        </button>
+
+      </li>
+      <li class="tl-item">
+
+        <div class="tl-bg" style="background-image: url(https://placeimg.com/802/802/nature)"></div>
+
+        <div class="tl-year">
+          <p class="f2 heading--sanSerif">OCTOBER 2019</p>
+        </div>
+
+        <div class="tl-content">
+          <h1 class="f3 text--accent ttu">RENDEZVOUS</h1>
+          <p>Rendezvous, famously known as RDV is the annual Cultural Festival of the Indian Institute of Technology,
+            Delhi. It is a four-day-long event held in October every year. Being the second largest College Cultural
+            Festival in Asia, it witnesses a footfall of more than 50k.</p>
+        </div>
+        <button class="btn-album">
+          <p class="know-more">Know More</p>
+        </button>
+
+      </li>
+
+      <li class="tl-item">
+
+        <div class="tl-bg" style="background-image: url(https://placeimg.com/803/803/nature)"></div>
+
+        <div class="tl-year">
+          <p class="f2 heading--sanSerif">DECEMBER 2019</p>
+        </div>
+
+        <div class="tl-content">
+          <h1 class="f3 text--accent ttu">ALUMNI DAY</h1>
+          <p>On Alumni Day, nominations for showcasing startup/innovation projects are selected. This is a flagship
+            event of IITD and IITDAA held at the Campus and at Chapters. It is a day full of activities with focused
+            Thematic Sessions, Entertainment and Cultural Music Program. With many industrialists and entrepreneurs,
+            this is an event where we showcase the progress of the club.</p>
+        </div>
+        <button class="btn-album">
+          <p class="know-more">Know More</p>
+        </button>
+
+      </li>
+
+
+      <li class="tl-item">
+
+        <div class="tl-bg" style="background-image: url(https://placeimg.com/804/804/nature)"></div>
+
+        <div class="tl-year">
+          <p class="f2 heading--sanSerif">FEBRUARY 2020</p>
+        </div>
+
+        <div class="tl-content">
+          <h1 class="f3 text--accent ttu">AUTO EXPO</h1>
+          <p>The Auto Expo is a biennial automotive show held in Greater Noida, NCR, India. It is Asia's largest and the
+            world's second-largest motor show.
+            Auto Expo is one of the world’s premier auto shows. A signature event, that witnesses the best minds coming
+            together on a single platform to showcases all that is best in the automotive world, in terms of products,
+            technologies, concepts and trends.
+
+
+          </p>
+        </div>
+        <button class="btn-album">
+          <p class="know-more">Know More</p>
+        </button>
+
+      </li>
+      <li class="tl-item">
+
+        <div class="tl-bg" style="background-image: url(https://placeimg.com/800/800/nature)"></div>
+
+        <div class="tl-year">
+          <p class="f2 heading--sanSerif">MARCH 2020</p>
+        </div>
+
+        <div class="tl-content">
+          <h1 class="f3 text--accent ttu">TRYST</h1>
+          <p>Tryst is the annual technical festival of the Indian Institute of Technology Delhi. The festival is the
+            largest technical fest of North India with a huge footfall of more than 45,000 people around the globe. It
+            is one of the largest and a highly acknowledged technical festival of India. The festival has always been
+            driven by the motivation to bring together the world’s leading scientific minds along with renowned
+            technologists and influential thinkers and connect them to a broader public involving students and faculty
+            across India</p>
+        </div>
+        <button class="btn-album">
+          <p class="know-more">Know More</p>
+        </button>
+
+      </li>
+      <li class="tl-item">
+
+        <div class="tl-bg" style="background-image: url(https://placeimg.com/800/800/nature)"></div>
+
+        <div class="tl-year">
+          <p class="f2 heading--sanSerif">APRIL 2020</p>
+        </div>
+
+        <div class="tl-content">
+          <h1 class="f3 text--accent ttu">OPEN HOUSE</h1>
+          <p>Open House is a one-day event dedicated to exhibit an extensive collection of innovative research and
+            product development projects. The day gives an insight into path-breaking research work, student projects
+            and the numerous advanced facilities and laboratories available in IIT Delhi. Open House promises to be a
+            real treat to the eyes of the connoisseurs by presenting finest of the projects to technology enthusiasts,
+            students and colleagues from other technical Institutes, school children, industries and general public.</p>
+        </div>
+        <button class="btn-album">
+          <p class="know-more">Know More</p>
+        </button>
+
+      </li>
+    </ul>
+    <!-- right arrow -->
+    <button class="right-paddle paddle">
+
+      <div class="arrow-container-right animated fadeInDown">
+        <div class="arrow-2">
+          <i class="arrow right"></i>
+
+        </div>
+        <div class="arrow-1 animated hinge infinite zoomIn"></div>
+    </button>
+    <!-- left arrow -->
+    <button class="left-paddle paddle hidden">
+
+      <div class="arrow-container-left animated fadeInDown">
+        <div class="arrow-2">
+          <i class="arrow left"></i>
+        </div>
+        <div class="arrow-1 animated hinge infinite zoomIn"></div>
+    </button>
+
+  </div>
+
+  <section class='footer'>
+    <footer id="footerID">
+
+
+      <div class="row footer-row">
+        <div class="col-lg-4 address">
+          <h4>ADDRESS</h4>
+          <p>WS 117-A, Central Workshop,
+            IIT Delhi, Hauz Khas,
+            New Delhi,
+            Pin - 110016</p>
+        </div>
+        <div class="col-lg-4 contacts">
+          <h4>CONTACTS</h4>
+          <p>TEAM CAPTAIN: DEEPANSU KAUSHIK</p>
+          <p>Email: kaushik.deepansu@gmail.com</p>
+          <p>Phone: +91 8368141685</p>
+        </div>
+        <div class="col-lg-4">
+          <div id="googleMap"></div>
+
+          <script>
+            function myMap() {
+              var mapProp = {
+                center: new google.maps.LatLng(51.508742, -0.120850),
+                zoom: 5,
+              };
+              var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            }
+          </script>
+
+          <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+        </div>
+        <div class="col-lg-6 feedback">
+          <h4>FEEDBACK</h4>
+          <p>Please send us your ideas, bug reports, suggestions! Any feedback would be appreciated.</p>
+        </div>
+      </div>
+      <div class="social-media">
+        <h3>Feel Free To Contact</h3>
+        <button type="button" class="btn"><i class=" social-media-buttons fab fa-youtube fa-2x"></i></span></button>
+        <button type="button" class="btn"><i class=" social-media-buttons fab fa-facebook-f fa-2x"></i></span></button>
+        <button type="button" class="btn"><i class="social-media-buttons fab fa-instagram fa-2x"></i></span></button>
+        <button type="button" class="btn"><i class="social-media-buttons fas fa-envelope fa-2x"></i></span></button>
+        <p>© Copyright 2020 AXLR8R FORMULA RACING</p>
+    </footer>
+
+
+  </section>
+
+
+  <script src="navBar.js"></script>
+</body>
+
+</html>
